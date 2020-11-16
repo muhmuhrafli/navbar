@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    object-fit: fill;
+    background-image: url(./img/nabawi.jpg);
+}
+
+header .logo{
+    color: white;
+    font-size: 25px;
+    padding: 100px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+header{
+    padding: 0 10px;
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+nav ul li a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+.btn-nav{
+    background: rgb(90, 236, 114);
+    padding: 10px 25px;
+    color: #fff;
+    border-radius: 10px;
+    transition: .5s ease;
+}
+.btn-nav:hover{
+    background: #fff;
+    color: rgb(90, 236, 114);
+    border: solid 1px rgb(90, 236, 114);
+}
+.hamburger{
+    color: white;
+    font-size: 25px;
+    display: none;
+    cursor: pointer;
+}
+.responsive{
+    text-align: center;
+    background: chartreuse;
+    height: 90vh;
+    display: none;
+}
+
+section img{
+    height: 300px;
+    width: 300px;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.galery{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 600px) { 
+    .body {
+         background-image: url('./img/nabawi.jpg');
+    }
+    .hamburger{
+        display: block;
+    }
+    .web{
+        display: none;
+    }
+    .responsive.active{
+        display: block;
+    }
+    .galery{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
