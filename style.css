@@ -23,6 +23,14 @@ header{
     align-items: center;
     justify-content: space-between;
 }
+main{
+    font-family: sans-serif;
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
 nav ul{
     display: flex;
     flex-direction: row;
@@ -35,6 +43,9 @@ nav ul li a{
     text-transform: uppercase;
     font-size: 15px;
     font-family: sans-serif;
+}
+nav ul li a:hover{
+    opacity: 0.7;
 }
 .btn-nav{
     background: rgb(90, 236, 114);
